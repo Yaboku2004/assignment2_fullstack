@@ -1,0 +1,254 @@
+  <!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 2
+  Author: Vu Nguyen Phuc Lam
+  ID: S3976441
+  Acknowledgement: Acknowledge the resources that you use here. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <title>Login</title>
+    <!-- the form awesome library is used to add icons to our form -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/icon.jpg" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container-fluid bg-warning">
+          <div class="row justify-content-center align-items-center vh-100">
+            <h1 class="text-center text-uppercase">
+              welcome to <strong>AMONGUS</strong>
+            </h1>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <img
+                src="images/AMONGUS.gif"
+                class="img-fluid"
+                alt="Websitelogo"
+              />
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form
+                action="/login"
+                method="post"
+                class="text-center text-lg-start mt-0 pt-1"
+              >
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <label for="username"><i class="fas fa-user"></i></label>
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    id="username"
+                    required
+                  />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                  <label for="password">
+                    <i class="fas fa-lock"></i>
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    id="password"
+                    required
+                  />
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="container mt-0">
+                    <button
+                      type="submit"
+                      value="Login"
+                      class="bg-primary text-light"
+                    >
+                      <strong>Login</strong>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#mymodal"
+                    >
+                      <strong>Forget Password</strong>
+                    </button>
+                    <div class="modal" id="mymodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">
+                              <strong>RESET PASSWORD</strong>
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label class="form-label required"
+                                  >Username</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label required">New Password</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <button type="submit" class="btn btn-primary">
+                                Reset
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <p class="small fw-bold mt-2 pt-1 mb-0">
+                    Don't have an account?
+                  </p>
+                  <a
+                    href="signupvendor.html"
+                    class="link-danger text-decoration-none"
+                    >Vendor registration</a
+                  >
+                  <br />
+                  <a
+                    href="signupshipper.html"
+                    class="link-danger text-decoration-none"
+                    >Shipper registration</a
+                  >
+                  <br />
+                  <a
+                    href="signupcustomer.html"
+                    class="link-danger text-decoration-none"
+                    >Customer registration</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i
+                ><strong>Website name</strong>
+              </h6>
+              <p>This is a shopping online website</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <strong>CUSTOMER SERVICE</strong>
+              </h6>
+              <p>
+                <a href="aboutus.html" class="text-reset">Helpng Center</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">How to buy goods</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">Return and refund</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">Transport</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <strong>ABOUT US</strong>
+              </h6>
+              <p>
+                <a href="aboutus.html" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">Copyright</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">Privacy</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <strong>Contact</strong>
+              </h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> HCM City</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                websitename@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        <a class="text-reset fw-bold text-decoration-none">Created by US</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

@@ -1,0 +1,12 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 2
+  Author: Bui Quoc Huy
+  ID: S3979447
+  Acknowledgement: Acknowledge the resources that you use here. */
+.gradient-custom {
+    background: greenyellow;
+    background: -webkit-linear-gradient(to right bottom, rgb(118, 246, 101), rgb(133, 253, 163));
+    background: linear-gradient(to right bottom, rgb(101, 246, 101), rgb(153, 253, 133))
+}

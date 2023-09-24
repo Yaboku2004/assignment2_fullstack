@@ -1,0 +1,66 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 2
+  Author: Tran Vu Thinh
+  ID: S3932811
+  Acknowledgement: Acknowledge the resources that you use here. */
+.goods img {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 40%;
+    height: 40%;
+}
+
+.homepage a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+.goods b {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.goods span {
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.goods p {
+    margin-left: 23%;
+    font-size: 16px;
+}
+
+.button {
+    margin-left: 50%;
+}
+
+.card a {
+    text-decoration: none;
+    color: gray;
+}
+
+.searchbar li a {
+    text-decoration: none;
+    color:black;
+}
+
+.Gears ul li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.searchbar {
+    background-color: gray;
+}
+
+.searchbar .blur {
+    filter: blur(30px);
+    background-color: rgb(53, 51, 51);
+}
+
+
